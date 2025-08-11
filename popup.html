@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Web Video Recorder</title>
+  <style>
+    body { min-width: 200px; padding: 10px; }
+    button { margin: 5px; }
+    select { margin: 5px; }
+  </style>
+</head>
+<body>
+  <label for="quality">Quality:</label>
+  <select id="quality">
+    <option value="low">Normal</option>
+    <option value="medium" selected>Medium</option>
+    <option value="high">High</option>
+  </select>
+  <br>
+  <button id="start">Start</button>
+  <button id="pause" disabled>Pause</button>
+  <button id="stop" disabled>Stop</button>
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+  "name": "Web Video Recorder",
+  "version": "1.0",
+  "description": "Record webpage videos for Twitter playback",
+  "permissions": [
+    "tabCapture",
+    "activeTab",
+    "storage",
+    "downloads",
+    "offscreen"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "start-recording": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+S"
+      },
+      "description": "Start recording"
+    },
+    "pause-recording": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+P"
+      },
+      "description": "Pause/Resume recording"
+    },
+    "stop-recording": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+X"
+      },
+      "description": "Stop recording"
+    }
+  }
+}
