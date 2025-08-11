@@ -33,10 +33,10 @@ async function startRecording(streamId, bitrate) {
       mandatory: {
         chromeMediaSource: 'tab',
         chromeMediaSourceId: streamId,
-        maxWidth: 1920,  // 设置最大宽度（调整为你想要的值）
-        maxHeight: 1080, // 设置最大高度（调整为你想要的值）
-        minWidth: 1920,  // 可选：设置最小宽度以强制固定分辨率
-        minHeight: 1080  // 可选：设置最小高度以强制固定分辨率
+        maxWidth: 1280,  // 设置最大宽度（调整为你想要的值）
+        maxHeight: 720, // 设置最大高度（调整为你想要的值）
+        minWidth: 1280,  // 可选：设置最小宽度以强制固定分辨率
+        minHeight: 720  // 可选：设置最小高度以强制固定分辨率
       }
     }
   });
